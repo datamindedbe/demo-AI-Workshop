@@ -1,0 +1,14 @@
+{
+    "servers": {
+        "demo_mcp": {
+        "type": "stdio",
+        "command": "uv",
+        "args": [
+            "--directory",
+            "/workspaces/RAG_Workshop", // Adapt this part if you're not using the dev container
+            "run",
+            "rag_in_mcp.py"
+            ]
+        }
+    }
+}

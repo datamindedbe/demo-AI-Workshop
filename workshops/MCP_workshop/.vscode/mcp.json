@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "path to Folder" // Replace the line with your project path 
+      ]
+    }
+  }
+}
