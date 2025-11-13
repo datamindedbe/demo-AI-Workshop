@@ -1,0 +1,12 @@
+[project]
+name = "githubcopilot-advanced-workshop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "approvaltests>=15.3.2",
+    "coverage>=7.11.3",
+    "pytest>=9.0.1",
+    "pytest-approvaltests>=0.2.4",
+]
