@@ -210,10 +210,18 @@ def main():
         return
     
     # Step 2: Create/get collection
-    # TODO: Add collection creation here
+    collection = create_or_get_collection()
     
     # Step 3: Index documents (only if collection is empty)
-    # TODO: Index documents here. Bonus: what if the collection is not empty?
+    if collection.count() == 0:
+        index_documents(documents, collection)
+    else:
+        print(f"Collection already has {collection.count()} chunks indexed.")
+        reindex = input("Re-index documents? (y/n): ").lower()
+        if reindex == 'y':
+            chroma_client.delete_collection(name="knowledge_base")
+            collection = create_or_get_collection()
+            index_documents(documents, collection)
     
     # Step 4: Interactive query loop
     print("\n" + "="*50)
@@ -232,6 +240,7 @@ def main():
         
         print("\n📚 Searching knowledge base...")
         # TODO: search the knowledge base for relevant chunks
+        relevant_chunks = search_knowledge_base(query, collection, n_results=3)
 
         if not relevant_chunks:
             print("No relevant information found.")
