@@ -14,6 +14,9 @@ If not, you will need the following:
 - python & uv
 - python's fastmcp sdk
 
+## How to use in gitpod
+After you opened it using the link in the top-level readme, you'll need to open a workspace in for this directory. From the root directory, you can do that by running `cd workshops/MCP_workshop` in a terminal.
+
 ## How to use the dev container
 To use the dev container, you will need to install the dev container extension below:\
 <img src="images/dev_container_extension.png" alt="dev container extension" width="400"/>
