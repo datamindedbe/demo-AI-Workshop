@@ -9,10 +9,12 @@ At the end of this workshop, you will:
 
 ## Prerequisites:
 If you are using the dev container, everything should be setup for you.
-If not, you will need the following:
+If not, you will need the following.
 - node & npm
 - python & uv
 - python's fastmcp sdk
+
+If you are running this on gitpod, these dependencies can be installed running the `bootstrap.sh` script in the MCP_workshop folder.
 
 ## How to use in gitpod
 After you opened it using the link in the top-level readme, you'll need to open a workspace in for this directory. From the root directory, you can do that by running `cd workshops/MCP_workshop` in a terminal.

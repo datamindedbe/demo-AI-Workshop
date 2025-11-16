@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "fastmcp>=2.13.0.2",
+    "mcp>=1.20.0",
+    "typer>=0.20.0",
 ]
 
 [tool.uv.workspace]
