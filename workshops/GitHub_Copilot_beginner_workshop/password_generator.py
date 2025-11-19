@@ -2,7 +2,6 @@ import sqlite3
 
 
 def init_db():
-    """Initialize the database."""
     conn = sqlite3.connect('passwords.db')
     cursor = conn.cursor()
     cursor.execute('''
@@ -18,7 +17,6 @@ def init_db():
 
 
 def add_password(service, username, password):
-    """Add a password entry."""
     conn = sqlite3.connect('passwords.db')
     cursor = conn.cursor()
     cursor.execute('INSERT INTO passwords (service, username, password) VALUES (?, ?, ?)',
@@ -28,7 +26,6 @@ def add_password(service, username, password):
 
 
 def get_passwords():
-    """Retrieve all passwords."""
     conn = sqlite3.connect('passwords.db')
     cursor = conn.cursor()
     cursor.execute('SELECT service, username, password FROM passwords')
