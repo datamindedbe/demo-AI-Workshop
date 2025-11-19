@@ -239,7 +239,6 @@ def main():
             continue
         
         print("\n📚 Searching knowledge base...")
-        # TODO: search the knowledge base for relevant chunks
         relevant_chunks = search_knowledge_base(query, collection, n_results=3)
 
         if not relevant_chunks:
