@@ -1,7 +1,0 @@
-image:
-  file: .gitpod.Dockerfile
-
-tasks:
-  - name: Setup
-    init: |
-      echo "Welcome to the AI Workshop!"
